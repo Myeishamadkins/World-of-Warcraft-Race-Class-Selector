@@ -1,0 +1,28 @@
+.whole-container {
+    background-image: url(./images/castleRoom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.WOW-logo {
+    /* height: 1; */
+    width: 200px;
+}
+.race,
+.class {
+    background-color: grey;
+    opacity: 0.7;
+}
+
+.btn-danger {
+    border: 1px;
+    border-radius: 7%;
+    border-color: gray;
+}
+
+.left-container-card-body {
+    background-color: grey;
+    opacity: 0.7;
+    border: 5px;
+    border-color: darkgray;
+}
