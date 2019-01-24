@@ -9,26 +9,48 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="whole-container d-flex">
+        <div class="whole-container d-flex justify-content-between">
             <div class="left-container">
-                <div class="top-left-container"></div>
-                <div class="top-middle-left-container"></div>
-                <div class="bottom-middle-left-container"></div>
-                <div class="bottom-left-container"></div>
-                <div class="button-left-container"></div>
+                <div class="left-container-card-body card-body">
+                    <div class="top-left-container"></div>
+                    <div class="top-middle-left-container"></div>
+                    <div class="bottom-middle-left-container"></div>
+                    <div class="bottom-left-container">
+                        <div class="left-side-input">
+                            <p>Skin Color</p>
+                            <p>Face</p>
+                            <p>Hair Style</p>
+                            <p> Hair Color</p>
+                            <p>Piercings</p>
+                        </div>
+                        <div class="left-side-arrows">
+                            <div class="left-arrow"></div>
+                            <div class="right-arrow"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger">Randomize</button>
+                </div>
             </div>
             <div class="middle-container">
                 <h3>Name</h3>
-                <input type="text" placeholder="...">
-                <button>Randomize</button>
+                <input type="text" placeholder="..." />
+                <button class="btn btn-danger">Randomize</button>
                 <div>
-                    <button>arrow</button>
-                    <button>arrow</button>
+                    ; <button class="btn btn-danger">arrow</button>
+                    <button class="btn btn-danger">arrow</button>
                 </div>
             </div>
             <div class="right-container">
-                <button>Accept</button>
-                <button>Back</button>
+                <img
+                    class="WOW-logo"
+                    src="./images/World_of_Warcraft_Cataclysm_Logo.png"
+                    alt=""
+                />
+                <div class="race card-body">oanogna</div>
+                <br />
+                <div class="class card-body">booaogmoang</div>
+                <button class="btn btn-danger">Accept</button>
+                <button class="btn btn-danger">Back</button>
             </div>
         </div>
         <script src="./links/jquery-3.3.1.slim.min.js"></script>
