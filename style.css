@@ -1,7 +1,8 @@
 body {
     background-image: url(./images/castleRoom.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .WOW-logo {
@@ -27,10 +28,22 @@ body {
     border-color: darkgray;
 }
 
-.alliance-card-body{
+.alliance-card-body {
     background-color: blue;
+    width: 25%;
+
 }
 
-.horde-card-body{
+.horde-card-body {
     background-color: red;
+    width: 25%;
+}
+
+ul {
+    list-style: none;
+}
+
+li > img{
+    height: 40px;
+    width: 40px;
 }
