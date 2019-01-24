@@ -26,3 +26,11 @@ body {
     border: 5px;
     border-color: darkgray;
 }
+
+.alliance-card-body{
+    background-color: blue;
+}
+
+.horde-card-body{
+    background-color: red;
+}
