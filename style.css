@@ -1,13 +1,13 @@
 body {
     background-image: url(./images/castleRoom.jpg);
     background-position: center;
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .left-container,
 .right-container {
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
 .WOW-logo {
@@ -15,7 +15,10 @@ body {
 }
 .race,
 .class {
-    background-color: grey;
+    background-color: rgb(41, 39, 39);
+    border: 5px ridge;
+    border-color: lightslategray;
+    border-radius: 2%;
     opacity: 0.7;
     text-align: left;
 }
@@ -27,31 +30,59 @@ body {
 }
 
 .left-container-card-body {
-    background-color: grey;
+    background-color: rgb(41, 39, 39);
+    border: 5px ridge;
+    border-color: lightslategray;
+    border-radius: 2%;
     opacity: 0.7;
-    border: 5px;
     border-color: darkgray;
 }
 
 .alliance-card-body {
     background-color: blue;
-    width: 25%;
 }
 
 .horde-card-body {
     background-color: red;
-    width: 25%;
 }
 
 ul {
     list-style: none;
 }
 
-li > img {
-    height: 40px;
-    width: 60px;
-}
+/* li > img {
+    height: 25px;
+    width: 35px;
+} */
 
 .right-container {
     width: 20%;
+}
+
+.class-image{
+    height: 25px;
+    width: 35px;
+    border-radius: 10%;
+}
+
+.male, 
+.female{
+    height: 35px;
+    width: 35px;
+    border-radius: 10%;
+}
+
+.extra-inputs{
+    border: 5px ridge;
+    border-color: lightslategray;
+    border-radius: 10%;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    height: 30px;
+    width: 130px;
+}
+
+.race-text,
+.class-text{
+    color: white;
 }
