@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(./images/castleRoom.jpg);
     background-position: center;
@@ -50,29 +55,30 @@ ul {
     list-style: none;
 }
 
-/* li > img {
-    height: 25px;
-    width: 35px;
-} */
+li > img {
+    height: 65px;
+    width: 75px;
+    border-radius: 10%; 
+}
 
 .right-container {
     width: 20%;
 }
 
-.class-image{
+.class-image {
     height: 25px;
     width: 35px;
     border-radius: 10%;
 }
 
-.male, 
-.female{
+.male,
+.female {
     height: 35px;
     width: 35px;
     border-radius: 10%;
 }
 
-.extra-inputs{
+.extra-inputs {
     border: 5px ridge;
     border-color: lightslategray;
     border-radius: 10%;
@@ -83,6 +89,18 @@ ul {
 }
 
 .race-text,
-.class-text{
+.class-text {
+    color: white;
+}
+
+.name-character {
+    color: yellow;
+}
+
+.card-body{
+    padding: 5;
+}
+
+h3{
     color: white;
 }
