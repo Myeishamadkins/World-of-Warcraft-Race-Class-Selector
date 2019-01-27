@@ -26,12 +26,18 @@ body {
     border-radius: 2%;
     opacity: 0.7;
     text-align: left;
+    height: 380px;
+    width: 350px;
 }
 
-.btn-danger {
-    border: 1px;
+.long-button {
+    align-content: center;
+    text-align: center;
+    border: 2px ridge;
     border-radius: 7%;
     border-color: gray;
+    height: 30px;
+    width: 130px;
 }
 
 .left-container-card-body {
@@ -58,7 +64,7 @@ ul {
 li > img {
     height: 65px;
     width: 75px;
-    border-radius: 10%; 
+    border-radius: 10%;
 }
 
 .right-container {
@@ -97,10 +103,29 @@ li > img {
     color: yellow;
 }
 
-.card-body{
+.card-body {
     padding: 5;
 }
 
-h3{
+h3 {
     color: white;
 }
+
+.alliance-race:hover,
+.horde-race:hover {
+    border: 1px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 30px gold;
+    border-color: gold;
+    background-color: gold;
+    background-size: 0.5px;
+}
+
+.scroller {
+    width: 300px;
+    height: 320px;
+    overflow-y: scroll;
+    scrollbar-color: white black;
+}
+
+
