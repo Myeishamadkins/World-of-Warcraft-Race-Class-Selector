@@ -16,7 +16,7 @@ body {
 }
 
 .WOW-logo {
-    width: 200px;
+    width: 300px;
 }
 .race,
 .class {
@@ -33,11 +33,25 @@ body {
 .long-button {
     align-content: center;
     text-align: center;
+    background-color: rgb(104, 18, 18);
+    color: gold;
     border: 2px ridge;
     border-radius: 7%;
     border-color: gray;
     height: 30px;
-    width: 130px;
+    width: 160px;
+}
+
+.short-button{
+    align-content: center;
+    text-align: center;
+    background-color: rgb(104, 18, 18);
+    color: gold;
+    border: 2px ridge;
+    border-radius: 7%;
+    border-color: gray;
+    height: 30px;
+    width: 100px;
 }
 
 .left-container-card-body {
@@ -91,7 +105,7 @@ li > img {
     background-color: rgb(41, 39, 39);
     color: white;
     height: 30px;
-    width: 130px;
+    width: 160px;
 }
 
 .race-text,
@@ -128,4 +142,14 @@ h3 {
     scrollbar-color: white black;
 }
 
-
+.name-input{
+    background-color: rgb(41, 39, 39);
+    border: 5px solid;
+    border-color: lightslategray;
+    border-radius: 10%;
+    opacity: 0.7;
+    border-color: darkgray;
+    height: 40px;
+    width: 160;
+    color: gold;
+}
