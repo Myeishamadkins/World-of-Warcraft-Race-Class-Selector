@@ -5,56 +5,123 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>World of Warcraft Replication</title>
-        <link rel="stylesheet" href="./links/bootstrap.min.css" />
+        <link rel="stylesheet" href="./links/bootstrap.min.css"/>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="whole-container d-flex justify-content-between">
-            <div class="left-container pl-3">
+<div class="whole-container d-flex justify-content-between">
+            <div class="left-container pl-3 d-flex">
                 <div class="left-container-card-body card-body">
-                    <div class="top-left-container d-flex">
-                        <ul class="alliance-side alliance-card-body card-body mr-2 text-center">
-                            <li><h3>Alliance</h3></li>
-                            <li><img class="alliance-race human-race btn" src="./images/human.png" alt=""></li>
-                            <li><img class="alliance-race dwarf-race btn" src="./images/dwarf.png" alt=""></li>
-                            <li><img class="alliance-race night-elf-race btn" src="./images/nightElf.png" alt=""></li>
-                            <li><img class="alliance-race gnome-race btn" src="./images/gnome.png" alt=""></li>
-                            <li><img class="alliance-race draenei-race btn" src="./images/draenei.png" alt=""></li>
-                            <li><img class="alliance-race worgen-race btn" src="" alt=""></li>
-                            <li><img class="alliance-race pandaren-race btn" src="" alt=""></li>
-                        </ul>
-                        <ul class="horde-side horde-card-body card-body ml-2 text-center">
-                            <li><h3>Horde</h3></li>
-                            <li><img class="horde-raceorc-race btn" src="./images/orc.png" alt=""></li>
-                            <li><img class="horde-raceundead-race btn" src="./images/undead.png" alt=""></li>
-                            <li><img class="horde-racetauren-race btn" src="./images/tauren.png" alt=""></li>
-                            <li><img class="horde-racetroll-race btn" src="./images/troll.png" alt=""></li>
-                            <li><img class="horde-raceblood-elf-race btn" src="./images/bloodElf.png" alt=""></li>
-                            <li><img class="horde-racegoblin-race btn" src="" alt=""></li>
-                            <li><img class="horde-racepandaren-race btn" src="" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="top-middle-left-container">
-                        <div class="gender-signs d-flex justify-content-center pt-1">
+                    <div class="container btn-group-vertical">
+                        <input class="first-half" id="human" type="radio" name="raceChoice" checked/>
+                        <label class="first-half" for="human">human</label>
+            
+                        <input class="first-half" id="dwarf" type="radio" name="raceChoice" />
+                        <label class="first-half" for="dwarf">dwarf</label>
+            
+                        <input class="first-half" id="nightElf" type="radio" name="raceChoice" />
+                        <label class="first-half" for="nightElf">nightElf</label>
+            
+                        <input class="first-half" id="gnome" type="radio" name="raceChoice" />
+                        <label class="first-half" for="gnome">gnome</label>
+            
+                        <input class="first-half" id="draenei" type="radio" name="raceChoice" />
+                        <label class="first-half" for="draenei">draenei</label>
+
+                    
+                        <input class="second-half" id="orc" type="radio" name="raceChoice">
+                        <label class="second-half" for="orc">orc</label>
+            
+                        <input class="second-half" id="undead" type="radio" name="raceChoice">
+                        <label class="second-half" for="undead">undead</label>
+            
+                        <input class="second-half" id="tauren" type="radio" name="raceChoice">
+                        <label class="second-half" for="tauren">tauren</label>
+            
+                        <input class="second-half" id="troll" type="radio" name="raceChoice">
+                        <label class="second-half" for="troll">troll</label>
+            
+                        <input class="second-half" id="bloodElf" type="radio" name="raceChoice">
+                        <label class="second-half" for="bloodElf">blood elf</label>
+            
+                        <!-- <div class="gender-signs d-flex justify-content-center pt-1">
                             <img class="male" src="./images/male.png" alt="">
                             <img class="female" src="./images/female.png" alt="">
-                        </div>
-                    </div>
-                    <div class="bottom-middle-left-container text-center pt-1 pb-3">
-                        <div class="top-half-class-images p-1">
-                            <img class="warrior class-image" src="./images/warrior.png" alt="">
-                            <img class="paladin class-image" src="./images/paladin.png" alt="">
-                            <img class="hunter class-image" src="./images/hunter.png" alt="">
-                            <img class="rogue class-image" src="./images/rogue.png" alt="">
-                            <img class="priest class-image" src="./images/priest.png" alt="">
-                        </div>
-                        <div class="bottom-half-class-images p-1">
-                            <img class="deathKnight class-image" src="./images/deathKnight.png" alt="">
-                            <img class="shaman class-image" src="./images/shaman.png" alt="">
-                            <img class="mage class-image" src="./images/mage.png" alt="">
-                            <img class="warlock class-image" src="./images/warlock.png" alt="">
-                            <img class="monk class-image" src="./images/monk.png" alt="">
-                        </div>
+                        </div> -->
+
+                        <ul class="races pt-3">
+                            <li id="warrior" data-teams="tauren undead orc human troll bloodElf dwarf nightElf draenei ">
+                                <!-- <h2>warrior</h2> -->
+                                <img
+                                    src="./images/warrior.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="paladin" data-teams="tauren human troll bloodElf dwarf draenei">
+                                <!-- <h2>paladin</h2> -->
+                                <img
+                                    src="./images/paladin.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="hunter" data-teams="tauren undead orc human troll bloodElf dwarf nightElf gnome draenei">
+                                <!-- <h2>hunter</h2> -->
+                                <img
+                                    src="./images/hunter.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="rogue" data-teams="undead orc human troll bloodElf dwarf nightElf gnome">
+                                <!-- <h2>rogue</h2> -->
+                                <img
+                                    src="./images/rogue.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="priest" data-teams="tauren undead human troll bloodElf dwarf nightElf gmone draenei">
+                                <!-- <h2>priest</h2> -->
+                                <img
+                                    src="./images/priest.png"
+                                    alt=""
+                                />
+                            </li>
+
+                            <li id="deathKnight" data-teams="tauren undead orc human troll bloodElf dwarf nightElf gnome draenei">
+                                <!-- <h2>death knight</h2> -->
+                                <img
+                                    src="./images/deathKnight.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="shaman" data-teams="tauren orc dwarf draenei">
+                                <!-- <h2>shaman</h2> -->
+                                <img
+                                    src="./images/shaman.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="maga" data-teams="undead orc human troll bloodElf dwarf nightElf gnome draenei">
+                                <!-- <h2>maga</h2> -->
+                                <img
+                                    src="./images/mage.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="warlock" data-teams="undead orc dwarf human gmone bloodElf">
+                                <!-- <h2>warlock</h2> -->
+                                <img
+                                    src="./images/warlock.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li id="monk" data-teams="tauren undead orc human troll bloodElf dwarf nightElf gnome draenei">
+                                <!-- <h2>monk</h2> -->
+                                <img
+                                    src="./images/monk.png"
+                                    alt=""
+                                />
+                            </li>
+                        </ul>
                     </div>
                     <div class="bottom-left-container d-flex">
                         <div class="left-side-input">
@@ -91,7 +158,7 @@
             <div class="middle-container text-center d-flex align-items-end">
                <div>
                 <h3 class="name-character">Name</h3>
-                <input type="text" placeholder="..." />
+                <input class="name-input" type="text" placeholder="Name Here..."/>
                 <br>
                 <button class="btn btn-danger long-button mt-2">Randomize</button>
                 <div>
@@ -138,11 +205,11 @@
                     </div>
                     <button class="btn btn-danger long-button mt-4">Accept</button>
                     <br>
-                    <button class="btn btn-danger mt-3">Back</button>
+                    <button class="btn short-button btn-danger mt-3">Back</button>
     
                 </div>
             </div>
-        </div>
+        </div> 
         <script src="./links/jquery-3.3.1.slim.min.js"></script>
         <script src="./links/popper.min.js"></script>
         <script src="./links/bootstrap.min.js"></script>

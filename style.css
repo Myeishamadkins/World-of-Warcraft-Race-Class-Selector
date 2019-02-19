@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+button {
+    height: 48px;
+    width: 50px;
+    border-radius: 10%;
+}
+
 body {
     background-image: url(./images/castleRoom.jpg);
     background-position: center;
@@ -42,7 +48,7 @@ body {
     width: 160px;
 }
 
-.short-button{
+.short-button {
     align-content: center;
     text-align: center;
     background-color: rgb(104, 18, 18);
@@ -75,11 +81,11 @@ ul {
     list-style: none;
 }
 
-li > img {
+/* li > img {
     height: 65px;
     width: 75px;
     border-radius: 10%;
-}
+} */
 
 .right-container {
     width: 20%;
@@ -142,7 +148,7 @@ h3 {
     scrollbar-color: white black;
 }
 
-.name-input{
+.name-input {
     background-color: rgb(41, 39, 39);
     border: 5px solid;
     border-color: lightslategray;
@@ -152,4 +158,174 @@ h3 {
     height: 40px;
     width: 160;
     color: gold;
+}
+
+input {
+    height: 48px;
+    width: 50px;
+    border-radius: 10%;
+}
+
+input {
+    position: absolute;
+    left: -9999px;
+}
+
+label {
+    background-image: url(picture);
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    margin: 5px;
+    padding: 10px 10px 10px 38px;
+    background-color: #000;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+label::before {
+    /* pictures go here i think */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(41, 39, 39);
+    background-color: #444;
+}
+
+input:focus + label {
+    outline: 1px solid rgb(41, 39, 39);
+}
+
+input:checked + label::before {
+    background-color: #c00;
+}
+
+.races{
+    display: inline-block;
+    width: 240px;
+    list-style-type: none;
+    /* margin: 15px -5px 0; */
+    padding: 0;
+}
+
+.races li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* width: 100px;
+    height: 100px; */
+}
+
+.races h2 {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid rgb(41, 39, 39);
+    color: rgb(41, 39, 39);
+    background-color: #000;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.races img {
+    height: 45px;
+    width: 55px;
+    border-radius: 10%;
+    border: 4px ridge rgb(41, 39, 39);
+    /* border-radius: 50%; */
+    background-color: rgb(41, 39, 39);
+    box-shadow: 0 0 20px #000;
+    opacity: 0.25;
+    transform: scale(0.5);
+}
+
+#human:checked ~ .races [data-teams~="human"] h2,
+#dwarf:checked ~ .races [data-teams~="dwarf"] h2,
+#nightElf:checked ~ .races [data-teams~="nightElf"] h2,
+#gnome:checked ~ .races [data-teams~="gnome"] h2,
+#draenei:checked ~ .races [data-teams~="draenei"] h2,
+#orc:checked ~ .races [data-teams~="orc"] h2,
+#undead:checked ~ .races [data-teams~="undead"] h2,
+#tauren:checked ~ .races [data-teams~="tauren"] h2,
+#troll:checked ~ .races [data-teams~="troll"] h2,
+#bloodElf:checked ~ .races [data-teams~="bloodElf"] h2 {
+    display: block;
+}
+
+#human:checked ~ .races [data-teams~="human"] img,
+#dwarf:checked ~ .races [data-teams~="dwarf"] img,
+#nightElf:checked ~ .races [data-teams~="nightElf"] img,
+#gnome:checked ~ .races [data-teams~="gnome"] img,
+#draenei:checked ~ .races [data-teams~="draenei"] img,
+#orc:checked ~ .races [data-teams~="orc"] img,
+#undead:checked ~ .races [data-teams~="undead"] img,
+#tauren:checked ~ .races [data-teams~="tauren"] img,
+#troll:checked ~ .races [data-teams~="troll"] img,
+#bloodElf:checked ~ .races [data-teams~="bloodElf"] img {
+    animation: avatar 0.3s forwards;
+}
+
+/* fade in and expand image to full size, with a slight bounce */
+@keyframes avatar {
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .races {
+        /* width: 480px; */
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .races {
+        /* width: 720px; */
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .races {
+        /* width: 960px; */
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row dense;
+}
+
+.first-half {
+    grid-column-start: 1;
+}
+
+.second-half {
+    grid-column-start: 2;
+}
+
+.races {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
 }
